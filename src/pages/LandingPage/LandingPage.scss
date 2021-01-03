@@ -1,0 +1,23 @@
+@import 'styles/main.scss';
+
+.app-initials-landing-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  background-color: $black;
+
+  &__heading {
+    width: 20rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $gray-03;
+    text-align: center;
+  }
+
+  &__sub-heading {
+    margin-top: 0;
+  }
+}
