@@ -10,7 +10,7 @@ repository:
   # description: The primary front-end repo template for application development. Uses CRA and TypeScript with Eslint, Tslint, Prettier, Jest, and Cypress configurations ready to go!
 
   # Either `true` to make the repository private, or `false` to make it public.
-  private: true
+  # private: false
 
 # Labels: define labels for Issues and Pull Requests
 labels:
