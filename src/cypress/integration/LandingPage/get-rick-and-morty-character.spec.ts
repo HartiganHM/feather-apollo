@@ -1,13 +1,15 @@
 import { copyContent, endpoints } from 'shared/data';
+import {
+  mockCharacterData,
+  mockCharacterCountResponse,
+  mockCharactersByIdResponse,
+} from 'shared/mocks';
 
 import {
   characterCountAlias,
   characterCountOperationName,
   charactersByIdAlias,
   charactersByIdOperationName,
-  mockCharacterData,
-  mockCharacterCountResponse,
-  mockCharactersByIdResponse,
   mockCharacterDescription,
 } from 'cypress/fixtures/get-rick-and-morty-charater.mock';
 
