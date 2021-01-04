@@ -41,6 +41,7 @@ const LandingPage: FC = () => {
           alt={name}
           className="app-initials-landing-page__character-image"
         />
+
         <p>{`${id} | ${name} | ${species}`}</p>
       </>
     );
