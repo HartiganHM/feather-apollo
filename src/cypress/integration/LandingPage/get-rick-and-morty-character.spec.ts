@@ -6,10 +6,11 @@ import {
 } from 'shared/mocks';
 
 import {
-  characterCountAlias,
-  characterCountOperationName,
   charactersByIdAlias,
   charactersByIdOperationName,
+  characterCountAlias,
+  characterCountOperationName,
+  characterImageAlias,
   mockCharacterDescription,
 } from 'cypress/fixtures/get-rick-and-morty-charater.mock';
 
@@ -74,15 +75,16 @@ describe('Get Rick and Morty Character', () => {
 
   it('Should show a picture of the character', () => {
     // Grab Rick's image by the alt attribute
-    // We use a ().then chain here to capture the value of the image element
-    // to be used in multiple checks.
+    // We use a Cypress alias to capture the value of the
+    // image element to be used in multiple checks.
     // Read more here: https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html#Return-Values
-    cy.findByAltText(mockCharacterData.name).then($characterImage => {
-      // Check that it exists and that the src attribute matches the mock data
-      $characterImage.should('exist');
-      // Because we're using a ().then chain, the assertions here follow the
-      // Chair Assertion Library, not Cypress
-      $characterImage.should.have.attr('src', mockCharacterData.image);
-    });
+    cy.findAllByAltText(mockCharacterData.name).as(characterImageAlias);
+
+    cy.get(`@${characterImageAlias}`).should('exist');
+    cy.get(`@${characterImageAlias}`).should(
+      'have.attr',
+      'src',
+      mockCharacterData.image
+    );
   });
 });
