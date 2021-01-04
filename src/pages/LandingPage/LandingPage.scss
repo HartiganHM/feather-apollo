@@ -20,4 +20,17 @@
   &__sub-heading {
     margin-top: 0;
   }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 512px;
+  }
+
+  &__character-image {
+    border: 3px solid $white;
+    border-radius: 1rem;
+  }
 }
