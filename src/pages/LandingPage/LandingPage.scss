@@ -26,10 +26,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 512px;
+    height: 32rem;
   }
 
   &__character-image {
+    min-height: 19.125rem;
     border: 3px solid $white;
     border-radius: 1rem;
   }
