@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloProvider } from '@apollo/client';
 
-import client from 'configuration/client';
+import { client } from 'configuration';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
