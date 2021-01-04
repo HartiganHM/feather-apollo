@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 /**
  * @param ids [ID!]! An array of character IDs
- * @returns characters [Character] An array of characters
+ * @returns { charactersByIds [{ id name species image }]} [Character] An array of characters
  */
 
 const GET_RICK_AND_MORTY_CHARACTERS_BY_ID = gql`
