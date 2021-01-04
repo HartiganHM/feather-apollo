@@ -1,3 +1,3 @@
 export default {
-  graphql: 'https://api.github.com/graphql',
+  graphql: 'https://rickandmortyapi.com/graphql',
 };
