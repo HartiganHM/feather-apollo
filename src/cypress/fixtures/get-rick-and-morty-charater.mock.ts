@@ -4,28 +4,9 @@ const characterCountOperationName = 'GetRickAndMortyCharacterCount';
 const charactersByIdAlias = 'charactersByIdQuery'
 const charactersByIdOperationName = 'GetRickAndMortyCharactersById';
 
-const mockCharacterCountResponse = {
-  data: { characters: { info: { count: 1 } } },
-};
-
-const mockCharactersByIdResponse = {
-  data: {
-    characters: [
-      {
-        id: '1',
-        name: 'Rick Sanchez',
-        species: 'Human',
-        image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-      },
-    ],
-  },
-};
-
 export {
   characterCountAlias,
   characterCountOperationName,
   charactersByIdAlias,
   charactersByIdOperationName,
-  mockCharacterCountResponse,
-  mockCharactersByIdResponse,
 };
