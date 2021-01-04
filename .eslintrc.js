@@ -39,7 +39,7 @@ module.exports = {
     // Make sure this is always the last configuration in the extends array.
     'plugin:prettier/recommended',
   ],
-  plugins: ['react-hooks', 'jest', 'cypress'],
+  plugins: ['react-hooks', 'jest', 'cypress', 'graphql'],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules
     // specified from the extended configs
@@ -76,7 +76,30 @@ module.exports = {
     // Fixes an error when suggesting testing devDependencies should be dependencies
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/no-unresolved': [2, { ignore: ['.spec.ts'] }],
-    // 'import/no-unresolved': 'off',
+    // Adds graphql linting for GQL tag template literals based on schemas
+    'graphql/template-strings': [
+      'error',
+      {
+        env: 'apollo',
+        schemaJson: require('./rickAndMortySchema.json'),
+      },
+    ],
+    // Requires that all GQL operations be names
+    'graphql/named-operations': [
+      'error',
+      {
+        schemaJson: require('./rickAndMortySchema.json'),
+      },
+    ],
+    // Can be enabled to lint required fielqqqds in a GQL schema
+    // 'graphql/required-fields': [
+    //   'error',
+    //   {
+    //     env: 'apollo',
+    //     schemaJson: require('./rickAndMortySchema.json'),
+    //     requiredFields: ['uuid'],
+    //   },
+    // ],
   },
   settings: {
     react: {
