@@ -72,10 +72,15 @@ describe('Get Rick and Morty Character', () => {
 
   it('Should show a picture of the character', () => {
     // Grab Rick's image by the alt attribute
-    const characterImage = cy.findByAltText(mockCharacterData.name);
-
-    // Check that it exists and that the src attribute matches the mock data
-    characterImage.should('exist');
-    characterImage.should('have.attr', 'src', mockCharacterData.image);
+    // We use a ().then chain here to capture the value of the image element
+    // to be used in multiple checks.
+    // Read more here: https://docs.cypress.io/guides/core-concepts/variables-and-aliases.html#Return-Values
+    cy.findByAltText(mockCharacterData.name).then($characterImage => {
+      // Check that it exists and that the src attribute matches the mock data
+      $characterImage.should('exist');
+      // Because we're using a ().then chain, the assertions here follow the
+      // Chair Assertion Library, not Cypress
+      $characterImage.should.have.attr('src', mockCharacterData.image);
+    });
   });
 });
