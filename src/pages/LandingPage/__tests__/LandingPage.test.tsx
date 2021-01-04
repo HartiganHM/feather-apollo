@@ -1,4 +1,4 @@
-import { cleanup, render, screen, RenderResult } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import { MockedProvider } from '@apollo/react-testing';
 
 import { copyContent } from 'shared/data';
