@@ -21,12 +21,7 @@ const mockCharactersByIdResponse = {
   },
 };
 
-const {
-  id,
-  name,
-  species,
-  image,
-} = mockCharacterData;
+const { id, name, species } = mockCharacterData;
 const mockCharacterDescription = `${id} | ${name} | ${species}`;
 
 export {
