@@ -1,5 +1,5 @@
 import capitalizeString from '../capitalizeString';
-import mockData from './__fixtures__/capitalizeString.mock';
+import mockData from './mocks/capitalizeString.mock';
 
 const { expectedWord, expectedSentence, testWord, testSentence } = mockData;
 

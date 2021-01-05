@@ -2,7 +2,7 @@ import { cleanup, render, screen } from '@testing-library/react';
 import { MockedProvider } from '@apollo/react-testing';
 
 import { copyContent } from 'shared/data';
-import mocks from './__fixtures__/rickAndMortyApollo.mock';
+import mocks from './mocks/rickAndMortyApollo.mock';
 import LandingPage from '../LandingPage';
 
 const {
