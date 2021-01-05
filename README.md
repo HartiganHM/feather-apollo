@@ -2,7 +2,11 @@
 
 A boilerplate repo template for frontend applications built using [Create React App](https://github.com/facebook/create-react-app) and [TypeScript](https://www.typescriptlang.org/) with configurations for [Eslint](https://eslint.org/), [TSlint](https://palantir.github.io/tslint/), [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), [Testing Library](https://testing-library.com/), and [Cypress](https://www.cypress.io/).
 
+This boilerplate has everything from our [Feather](https://github.com/featherweight-design/feather) frontend repo template with the addition of a base configuration from [Apollo Client](https://www.apollographql.com/docs/react/) which can be used for communicating with GraphQL servers, as well as frontend caching and local state management.
+
 Though the documentation in this repo is specific to this boilerplate project, it can be used as a guideline for a new project as well, but should be updated to match the specific approach of that application.
+
+> Looking for something without Apollo and GraphQL? Check out our [Feather](https://github.com/featherweight-design/feather) boilerplate 🤘
 
 ## Using the Template
 
