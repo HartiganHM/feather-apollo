@@ -20,6 +20,7 @@ The configurations in this template are not rules that are set in stone but reco
   - [TypeScript Styleguide](#typescript-styleguide)
   - [CSS Styleguide](#css-styleguide)
   - [React Styleguide](#react-styleguide)
+  - [GraphQL/Apollo Styleguide](#graphqlapollo-styleguide)
   - [Testing Styleguide](#testing-styleguide)
     - [General](#general)
     - [Jest](#jest)
@@ -116,6 +117,15 @@ If talking to a real person is your jam, reach out to the `#questions` channel i
 - Methods passed to components as props should prefaced with the world `handle` (e.g. `handleChange`, `handleClose`, etc.)
 - Any boolean props should be prefaced with the words `is/has/was` (e.g. `isLoading`, `hasData`, `wasSuccessful`, etc.)
 - All possible states should be considered (e.g. empty, full, disabled, loading, etc.)
+
+### GraphQL/Apollo Styleguide
+
+- All queries/mutations are stored in their respective directories in `/shared`
+- Each query/mutation should have comments explaining any inputs, return values, and schema types
+- Query/mutation files should be in PascalCase with descriptive naming
+- Exports from query/mutation files should be in `SCREAMING_SNAKE_CASE`
+- All queries/mutations should be executed through hooks from Apollo Client (e.g. `useQuery`, `useMutation`, etc.)
+- Any GraphQL schemas should be added to the repo and the `.eslintrc.js` update in order for GraphQL template literal linting
 
 ### Testing Styleguide
 
