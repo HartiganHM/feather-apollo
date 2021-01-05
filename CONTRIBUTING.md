@@ -126,18 +126,18 @@ Jest should be used for testing utilities and under-the-hood functionality of pa
 #### General
 
 - All "happy" and "sad" paths should be tested when possible
-- Mocks and static content should be reused from the `/shared/data` when possible (e.g. `copyContent`, etc.)
+- Mocks and static content should be reused from the `/shared/mocks` when possible (e.g. `copyContent`, etc.)
 
 #### Jest
 
 - Tests should generally be reserved for `utilities` and any under-the-hood, functional logic of component/page (e.g. filtering, sorting, formatting, etc.)
-- If a test has specific data mocks that are not reusable, they should be located in `__tests__/__fixtures__` with a `<FILE_NAME>.mock.ts` convention (e.g. `capitalizeString.mock.ts`)
+- If a test has specific data mocks that are not reusable, they should be located in `__tests__/mocks` with a `<FILE_NAME>.mock.ts` convention (e.g. `capitalizeString.mock.ts`)
 - If a test has utilities associated with mock data, they should be moved to a `__tests__/utilities` directory
 
 #### Cypress
 
 - Should be used for end-to-end (E2E) functionality and all components/pages when possible
-- If a test has specific data mocks that are not reusable, they should be located in `cypress/fixtures` as either `*.ts` or `*.json`
+- If a test has specific data mocks that are not reusable, they should be located in `cypress/fixtures` as either `*.mock.ts` or `*.json`
 - If a test has utilities associated with mock data, they should be moved to a `cypress/support/utilities` directory
 - Tests should be written using more behavioral, product nomenclature:
 
