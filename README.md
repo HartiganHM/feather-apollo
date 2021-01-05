@@ -1,4 +1,4 @@
-# Feather: Frontend Boilerplate
+# Feather-Apollo: Frontend Boilerplate
 
 A boilerplate repo template for frontend applications built using [Create React App](https://github.com/facebook/create-react-app) and [TypeScript](https://www.typescriptlang.org/) with configurations for [Eslint](https://eslint.org/), [TSlint](https://palantir.github.io/tslint/), [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), [Testing Library](https://testing-library.com/), and [Cypress](https://www.cypress.io/).
 
