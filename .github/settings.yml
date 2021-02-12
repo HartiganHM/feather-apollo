@@ -62,6 +62,10 @@ labels:
     color: '#9a64d1'
     description: Spike work for a proposed technology, upgrade, or degradation
 
+  - name:  🔒 Security
+    color: '#FF9F33'
+    description: Security patch or vulnerability update
+
   - name: 💅  Styling
     color: '#F7B5D6'
     description: Styles need to be added, improved, or updated
