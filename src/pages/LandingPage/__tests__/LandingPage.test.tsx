@@ -1,5 +1,5 @@
 import { cleanup, render, screen } from '@testing-library/react';
-import { MockedProvider } from '@apollo/react-testing';
+import { MockedProvider } from '@apollo/client/testing';
 
 import { copyContent } from 'shared/data';
 import mocks from './mocks/rickAndMortyApollo.mock';
