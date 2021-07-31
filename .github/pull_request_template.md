@@ -1,18 +1,34 @@
+# <TITLE>
+
+## Issues
+
+- Resolves #<ISSUE_NUMBER>
+
+---
+
 ## Description
 
-- [Wiki](https://github.com/featherweight-design/feather/wiki/<GH_WIKI_PAGE>)
-- Issues:
-  - Resolves #<ISSUE_NUMBER>
+<BRIEF_DESCRIPTION>
+
+---
 
 ## Changes
 
 - 
 
+---
+
 ## Fixes
 
 - 
 
+---
+
 ## Screenshots
+
+> Screenshot description
+
+---
 
 ## Sanity Checks
 
